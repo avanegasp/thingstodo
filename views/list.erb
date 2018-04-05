@@ -1,0 +1,15 @@
+<h2>lista</h2>
+
+<%@list.each do |item|%>
+  <p><%=item.name%></p>
+<%end%>
+
+
+<h4>Agregar una nota a la lista</h4>
+<form action="/" method="post">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" class="form-group">
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</form>
